@@ -22,7 +22,7 @@ except:
 
 print('Задача 2: Лямбда-Функции')
 squar = lambda x, y: x ** y
-print(squar(3, 3)) # Выводит 6
+print(squar(3, 3)) 
 
 def squar(x,y):
     return x ** y
