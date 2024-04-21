@@ -4,7 +4,6 @@ def all_variants(text):
     yield text[0:2]
     yield text[1:3]
     yield text
-print(all_variants('abc'))
 res = all_variants('abc')
 for x in res:
     print(x)
