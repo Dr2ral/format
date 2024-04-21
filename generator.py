@@ -8,6 +8,8 @@ print(all_variants('abc'))
 res = all_variants('abc')
 for x in res:
     print(x)
+
+
 def all_variants(text):
     for start in range(len(text)):
          for end in range(start+1, len(text)+1):
