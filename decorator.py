@@ -1,6 +1,3 @@
-def sum_three(a, b, c):
-    res = a + b + c
-    return res
 def is_prime(func):
     def wrapper(a, b, c):
         sum = func(a, b, c)
@@ -10,7 +7,11 @@ def is_prime(func):
             print('Составное')
         return sum
     return wrapper
+@is_prime
+def sum_three(a, b, c):
+    res = a + b + c
+    return res
 
-result = is_prime(sum_three)
-a = result(2, 3, 6)
+#sum_three = is_prime(sum_three)
+a = sum_three(2, 3, 6)
 print(a)
