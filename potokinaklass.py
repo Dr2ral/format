@@ -16,13 +16,9 @@ class Knight(Thread):
             sleep(5)
 
 
-#knight1 = Knight('Tural', 20)
-#a = knight1.battle()
 kn1 = Knight('Sir Arthur', 10)
-kn1.start()
 kn2 = Knight('Sir Garet  ', 20)
-
-
+kn1.start()
 kn2.start()
 print('Битва началась!')
 kn1.join()
